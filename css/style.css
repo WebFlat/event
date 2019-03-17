@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	font-size: 10px;
+	font-family: 'Poppins', Arial, sans-serif;
+	color #444444;
+}
+/*Button*/
+.btn {
+	color: #fff;
+	border: 2px solid #c60ebe;
+	background-color: #c60ebe;
+	border-radius: 1rem;
+	text-decoration: none;
+	text-align: center;
+	font-size: 2.2rem;
+	padding: 1em 1.4em;
+	font-weight: 700;
+	transition: all .4s ease-in-out; 
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+	color: #c60ebe;
+	background-color: transparent;
+}
+
+body {
+	min-height: 100%;
+	font-size: 2.2rem;
+	margin: 0;
+}
+
+.container {
+	max-width: 1170px;
+	width: 90%;
+	margin: 0 auto;
+	padding: 0  1.5rem;
+}
+
+.footer {
+	padding: 6rem 0;
+}
+
+h1 {	
+	font-size: 6rem;
+	margin: 3rem 0;
+}
+#about h2 {
+	color: #e71cb4;
+}
+h2 {
+	font-size: 6.2rem;
+}
+#about h3 {
+	margin-top: 14rem;
+}
+h3 {
+	font-size: 3.6rem;
+}
+h4 {
+	font-size: 3rem;
+}
+.section {
+	padding: 11rem 0;
+}
+.section--cover {
+	background-position: center;
+	-webkit-background-size: cover;
+	 background-size: cover;
+	color: #fff;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.section--cover h1 + p {
+	font-size: 3rem;
+	margin: 0 0 4em;
+}
+ 
+.btn--transparent {
+	font-size: 1.6rem;
+	background-color: transparent;
+	border-color: #fff;
+	margin-top: 7rem;
+	font-weight: 600;
+}
+.btn--transparent:hover,
+.btn--transparent:focus,
+.btn--transparent:active {
+	color: #000;
+	background-color: #fff;
+}
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+header .container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header a {
+	color: #fff;
+	text-decoration: none;
+}
+header a:hover,
+header a:active,
+header a:focus {
+	color: #d91baa;
+}
+nav a {
+	border-bottom: 1px solid transparent;
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+nav a:hover,
+nav a:active,
+nav a:focus {
+	border-color: #d91baa;
+}
+.logo {
+	font-size: 3.4rem;
+	font-weight: 600;
+}
+nav ul {
+	padding: 0;
+}
+nav ul li {
+	display: inline-block;
+	margin-left: 2em;
+}
+.items {
+	padding: 0;
+	column-count: 2;
+	list-style: none;
+	font-size: 2.4rem;
+	font-weight: 500;
+}
+.item {
+	font-size: 0;
+	margin-bottom: 6rem;
+}
+.item__index,
+.item__text {
+	display: inline-block;
+	vertical-align: top;	
+}
+.item__index {
+	width: 40%;
+	font-size: 4.4rem;
+	font-weight: 700;
+	line-height: 1;
+	padding-left: .5em;	
+}
+.item__index:before {
+	content: "\f054";
+	font-family: "Font Awesome 5 Free";
+	vertical-align: middle;
+	font-weight: 900;
+	line-height: 1;
+	font-size: .9em;
+	margin-right: 2em;
+}
+.item__text {
+	width: 60%;
+	font-size: 2.4rem;
+}
+
+
+
+/*Helpers*/
+.text-center {
+	text-align: center;
+}
+.text-large {
+	font-size: 3.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
