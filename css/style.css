@@ -12,6 +12,7 @@ html {
 }
 /*Button*/
 .btn {
+	display: inline-block;
 	color: #fff;
 	border: 2px solid #c60ebe;
 	background-color: #c60ebe;
@@ -46,7 +47,6 @@ body {
 .footer {
 	padding: 6rem 0;
 }
-
 h1 {	
 	font-size: 6rem;
 	margin: 3rem 0;
@@ -57,7 +57,8 @@ h1 {
 h2 {
 	font-size: 6.2rem;
 }
-#about h3 {
+#about h3,
+#about h4 {
 	margin-top: 14rem;
 }
 h3 {
@@ -159,12 +160,26 @@ nav ul li {
 	vertical-align: top;	
 }
 .item__index {
-	width: 40%;
+	width: 35%;
 	font-size: 4.4rem;
 	font-weight: 700;
 	line-height: 1;
-	padding-left: .5em;	
+	padding-left: .5em;
+	color: #ffde16;	
 }
+.item__index--pink {
+	color: #ffbd9e;
+}
+.item__index--blue {
+	color: #20c9e0;
+}
+.item__index--green {
+	color: #2eac66;
+}
+.item__index--purple {
+	color: #ff6179;
+}
+
 .item__index:before {
 	content: "\f054";
 	font-family: "Font Awesome 5 Free";
@@ -172,13 +187,47 @@ nav ul li {
 	font-weight: 900;
 	line-height: 1;
 	font-size: .9em;
-	margin-right: 2em;
+	margin-right: 25%;
 }
 .item__text {
-	width: 60%;
-	font-size: 2.4rem;
+	width: 65%;
+	font-size: 2.2rem;
+	min-height: 6.7rem;
 }
+#competitiors {
+	background-image: url(../img/Bg.jpg);
+	background-size: cover;
+	color: #fff;
+}
+.persons {
+	padding: 0;
+	font-size: 0;
+	
+}
+.person {
+	display: inline-block;
+	width: 33.3%;
+	padding: 2rem 6.5rem;
+	font-size: 1.6rem;
+	text-align: center;
+}
+.person__image {
+	width: 100%;
+	border-radius: 1rem;
+}
+.person__name {
+	font-size: 2.4rem;
+	margin: 2.4rem 0;
+	line-height: 1;
+	max-height: 2.4rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 
+}
+.person__text {
+
+}
 
 
 /*Helpers*/
@@ -187,6 +236,12 @@ nav ul li {
 }
 .text-large {
 	font-size: 3.2rem;
+}
+.text-small {
+	font-size: .65em;
+}
+.mb-large {
+	margin-bottom: 5rem;
 }
 
 
