@@ -220,17 +220,20 @@ nav ul li {
 }
 .person__img-wrap {
 	width: 100%;
-	height: 250px;
-	position: relative;
-	overflow: hidden;
+    padding-top: 100%;
+    /* height: 250px; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+
 }
 .person__img-wrap--round {
-	border-radius: 50%;
+	border-radius: 100%;
 
 }
 .person__image {
-	width: 100%;
-	border-radius: 1rem;
+	min-width: 100%;
+	min-height: 100%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -307,10 +310,82 @@ nav ul li {
 	opacity: .9;
 }
 .person--jury {
- 	padding: 0 1rem; 
+ 	padding: 2rem 3rem; 
 }
 #jury {
 	background-color: #ffe9ed;
+}
+#contacts {
+	padding-bottom: 18rem;
+}
+.contacts__wrapper {
+	width: 70%;
+	margin: 0 auto;
+}
+.contact {
+	display: inline-block;
+	width: 22rem;
+	min-width: 40%;
+	transition: all .4s ease-in-out;
+	margin: 2rem 3%;
+	position: relative;
+}
+.contact__input {	
+	width: 100%;
+	padding-bottom: .5rem;
+	border: none;
+	border-bottom: 3px solid #000;
+	margin: 0;
+	font-size: 1.2rem;
+	text-align: left;
+	outline: none;	
+}
+.contact__label {
+	display: inline-block;
+	transition: all .4s ease-in-out;
+	position: absolute;
+	margin: .5rem 0;
+	display: inline-block;
+	
+	font-size: 1.2rem;
+	text-align: left;
+	color: #555555;
+	font-size: 1.2rem;
+	left: 1%;
+	bottom: 10%;
+
+}
+.contacts__form {
+	max-width: 70rem;
+	min-width: 100%;
+	margin: 0 auto;
+	line-height: 1.5rem;
+}
+.contact__input:focus + .contact__label,
+.contact__input:active + .contact__label,
+.contact__input:valid + .contact__label {
+	transform: translate(0, 3rem);
+}
+.contact__massage {
+	width: 87%;
+	margin: 0;
+	margin-top: 20%;
+
+}
+.btn__message {
+	background-color: #555555;
+	color: #fff;
+	border-radius: 0;
+	border: 1px solid #555555;
+	float: right;
+	margin-right: 8%;
+	margin-top: 3rem;
+}
+.btn__message:hover,
+.btn__message:focus {
+	color: #555555;
+	background-color: #fff;
+	cursor: pointer;
 }
 
 .newsletter input {
